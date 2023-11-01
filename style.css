@@ -8,3 +8,51 @@ body{
     background: black;
     color: white;
 }
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png); /*background Image of the portfolio page*/
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%; /*menu bar allignment*/
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 25px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #a1a7e7;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
