@@ -13,18 +13,20 @@
    <div class="container">
     <nav>
         <img src="images/logo.png" class="logo">
-        <ul>
+        <ul id="sidemenu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Project</a></li>
             <li><a href="#">Service</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Recent work</a></li>
             <li><a href="#">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
     </nav>
     <div class="header-text">
-        <p> Software Engineering Undergrad Student</p>
         <h1>Hello, I'm <span>Farzine Hossen</span> <br>from Bangladesh</h1>
+        <p> Software Engineering Undergrad Student</p>
     </div>
    </div> 
 </div>  
@@ -266,6 +268,18 @@ function opentab(tabname){
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
 
 </script>
 

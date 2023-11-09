@@ -46,7 +46,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 2px;
-    background: #a1a7e7;
+    background: rgb(16, 107, 217);
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -60,11 +60,13 @@ nav ul li a:hover::after{ /*hover effect for menue bar*/
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    color: yellow;
 }
 
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
+    color: white;
 }
 
 .header-text h1 span{
@@ -119,7 +121,7 @@ nav ul li a:hover::after{ /*hover effect for menue bar*/
     content: '';
     width: 0;
     height: 3px;
-    background: #a1a7e7;
+    background: rgb(16, 107, 217);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -394,4 +396,51 @@ form .btn2{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+}
+
+/* -----------------CSS for small screen--------- */
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/phone\ backgroundsss-removebg.png);
+    }
+    .header-text{
+        margin-top: 130%;
+        font-size: 16px;
+        color: rgb(16, 107, 217);
+    }
+    .header-text h1 span{
+        color: rgb(16, 107, 217); /*color my name*/
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: rgb(16, 107, 217);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 280px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
 }
