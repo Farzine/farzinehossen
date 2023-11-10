@@ -4,6 +4,11 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: black;
     color: white;
@@ -367,6 +372,11 @@ nav ul li a:hover::after{ /*hover effect for menue bar*/
     background: rgb(16, 107, 217);
 }
 
+.contact-sub-titles{
+    font-size: 30px;
+    font-weight: 600px;
+}
+
 .contact-right form{
     width: 100%;
 }
@@ -395,7 +405,7 @@ form .btn2{
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* -----------------CSS for small screen--------- */
@@ -408,7 +418,7 @@ nav .fas{
         background-image: url(images/phone\ backgroundsss-removebg.png);
     }
     .header-text{
-        margin-top: 130%;
+        margin-top: 140%;
         font-size: 16px;
         color: rgb(16, 107, 217);
     }
@@ -427,7 +437,7 @@ nav .fas{
         position: fixed;
         top: 0;
         right: -200px;
-        width: 280px;
+        width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -443,4 +453,40 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
+
+    .sub-title{
+        font-size: 40px;
+    }
+    .abot-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .abot-col-1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .abot-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+        
+    }
+    .tab-links{
+        font-size: 20px;
+        margin-right: 25px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+
+
+}
+
+#msg{
+    color: yellow;
+    margin-top: -40px;
+    display: blockS;
 }
