@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farzine Hossen</title>
+    <link rel="shortcut icon" href="./images/icon.svg" type="image/svg+xml" sizes="16x16">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/956459c634.js" crossorigin="anonymous"></script>
 </head>
@@ -66,12 +67,6 @@
                     <p class="tab-links"onclick="opentab('Education')">Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="Skills">
-                    <!-- <ul>
-                        <li><span>Competative Programmer</span><br>Sufficient knowledge in DSA and Algorithms</li>
-                        <li><span>App Development</span><br>Building Android /IOS app</li>
-                        <li><span>Web Development</span><br>Wep app developmet</li>
-                        <li><span>UI/UX</span><br>Design web/app interface</li>   
-                    </ul> -->
                     <ul>
                         <li><span>Language : <br></span>
                             <div class="space1">
@@ -315,7 +310,12 @@
             </div>
 
         </div>
-        <a href="#projects"class="btn">See more</a>
+        <button class="button" id="btn" onclick="window.location.href = '#projects';">
+            <span class="button_lg">
+                <span class="button_sl"></span>
+                    <span class="button_text">See More</span>
+            </span>
+        </button>
     </div>
 </div>
 
@@ -326,15 +326,20 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope fa-beat"></i>farzine07@student.sust.edu</p>
+                <p><i class="fa-solid fa-envelope fa-beat"></i>alfezafarzine@gmail.com</p>
                 <p><i class="fa-solid fa-phone fa-beat"></i>01793834474</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/alfeza.farzine.9/"><i class="fa-brands fa-facebook "></i></a>
                     <a href="https://www.linkedin.com/in/farzine-hossen/"><i class="fa-brands fa-linkedin "></i></a>
                     <a href="https://github.com/Farzine"><i class="fa-brands fa-github "></i></a>
-                    <a href="alfezafarzine@gmail.com"><i class="fa-brands fa-google "></i></a>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent?compose=DmwnWsCTrtwkdCqKrnLhtLmSXRLcfJpQtlkrRKwVBvRtWHpTcfqkrZdKPxxNGWlGfkmNKRVBGslB"><i class="fa-brands fa-google "></i></a>
                 </div>
-                <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+                <button class="button" id="btn2" onclick="window.location.href = './images/cv.pdf';download='cv.pdf';">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                            <span class="button_text">Download CV</span>
+                    </span>
+                </button>
             </div>
             <div class="contact-right">
             <h2 class="contact-sub-titles">Write Your Opinion:</h2>
@@ -342,7 +347,12 @@
                 <input type="text" name="Name" placeholder="Your Name" required>
                 <input type="email" name="Email" placeholder="Your Email" required>
                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
+                <button type="submit" class="button" id="btn3">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                            <span class="button_text">Submit</span>
+                    </span>
+                </button>
             </form>
             <span id="msg"></span>
         </div>

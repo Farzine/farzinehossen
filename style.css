@@ -141,7 +141,7 @@ body{
     height: 60px;
     position: relative;
     z-index: 1;
-    margin-top: 0%;
+    margin-top: -2%;
     left: calc(-2%);
   }
   
@@ -453,7 +453,7 @@ nav ul li a:hover::after{ /*hover effect for menue bar*/
     position: relative;
     display: block;
     padding: 10px 20px;
-    color: #fff;
+    color: yellow;
     background-color: #0f1923;
     overflow: hidden;
     box-shadow: inset 0px 0px 0px 1px transparent;
@@ -671,16 +671,10 @@ nav ul li a:hover::after{ /*hover effect for menue bar*/
     height: 100%;
 }
 
-.btn{
+#btn{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid rgb(16, 107, 217);
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-    transition: background 0.5s;
 }
 
 .btn:hover{
@@ -723,10 +717,11 @@ nav ul li a:hover::after{ /*hover effect for menue bar*/
     transform: translateY(-5px);
 }
 
-.btn.btn2{
+#btn2{
     display: inline-block;
-    background: rgb(16, 107, 217);
+    margin: 25px;
 }
+
 
 .contact-sub-titles{
     font-size: 30px;
