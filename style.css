@@ -758,7 +758,159 @@ form .btn2{
     font-weight: 300;
     margin-top: 30px;
 }
+/* follower box */
+.follower {
 
+
+    position: relative;
+  
+    margin-top: 120px;
+    margin-bottom: 0px;
+  
+  }
+  
+  
+  .wrapperpp {
+    position: relative;
+    width: 50vw;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .containerpp {
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color: #202124d0;
+    border-bottom: 10px solid rgb(16, 107, 217);
+  }
+  
+  .wrapperpp i {
+    color: yellow;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  span.num {
+    color: rgb(16, 107, 217);
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+  }
+  
+  span.text {
+    color: yellow;
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .wrapperpp {
+        width: 70vw;
+    }
+  
+    .containerpp {
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .wrapperppp {
+        width: 75vw;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+  
+    .containerpp {
+        width: calc(50% - 40px);
+        height: 30vmin;
+        font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+
+    .follower {
+  
+  
+        position: relative;
+    
+        margin-top: -50px;
+        margin-bottom: 70px;
+    
+    }
+    
+    span.num {
+      color: #ffffff;
+      display: grid;
+      place-items: center;
+      font-weight: 600;
+      font-size: 2em;
+    }
+  
+    .wrapperpp .text {
+      opacity: 0;
+    }
+  
+    .containerpp {
+        width: 100%;
+        height: 25vmin;
+        font-size: 8px;
+    }
+  }
+  
+  #progress {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 4;
+    height: 50px;
+    width: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 5px grey;
+    cursor: pointer;
+  }
+  
+  #progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+  } 
+  @media only screen and (max-width: 1200px){
+    #progress{
+        right: 10px;
+    }
+} 
+
+  @media only screen and (max-width: 700px){
+    #progress{
+        height: 45px;
+        width: 45px;
+        right: 10px;
+    }
+  }
 /* -----------------CSS for small screen--------- */
 nav .fas{
     display: none;
