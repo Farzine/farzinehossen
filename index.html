@@ -8,10 +8,23 @@
     <link rel="shortcut icon" href="./images/icon.svg" type="image/svg+xml" sizes="16x16">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/956459c634.js" crossorigin="anonymous"></script>
+    <!--===== CSS Files ======-->
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <link rel="stylesheet" href="skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!--===== Style Switcher ======-->
+    <link rel="stylesheet" href="skins/color-1.css" class="alternate-style" title="color-1">
+    <link rel="stylesheet" href="skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="./style-switcher.css">
+    <!--===== Style Switcher ======-->
 </head>
 <body>
 <div id="header">
-   <div class="container">
+   <div class="container box">
     <nav>
         <img src="images/logo.png" class="logo">
         <ul id="sidemenu">
@@ -65,10 +78,10 @@
 <div id="About"><br><br>
     <div class="container">
         <div class="row">
-            <div class="about-col-1">
+            <div class="about-col-1 box">
                 <img src="images/users.png">
             </div>
-            <div class="about-col-2">
+            <div class="about-col-2 box">
                 <h1 class="sub-title">About Me</h1>
                 <p>
                 <br>I hold a B.Sc. in Software Engineering from <a href="https://www.sust.edu/" class="varsity">Shahjalal University of Science and Technology</a>, providing a robust foundation in technology. 
@@ -81,7 +94,7 @@
                     <p class="tab-links"onclick="opentab('Experience')">Experience</p>
                     <p class="tab-links"onclick="opentab('Education')">Education</p>
                 </div>
-                <div class="tab-contents active-tab" id="Skills">
+                <div class="tab-contents active-tab box" id="Skills">
                     <ul>
                         <li><span>Language : <br></span>
                             <div class="space1">
@@ -146,7 +159,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="Experience">
+                <div class="tab-contents box" id="Experience">
                     <ul>
                         <li><span>2023 - Present</span><br>Executive member at <a href="https://sustsc.acm.org/" class="acm2">SUST ACM Student Chapter</a></li>   
                         
@@ -166,7 +179,7 @@
                         
                     </ul>
                 </div>
-                <div class="tab-contents" id="Education">
+                <div class="tab-contents box" id="Education">
                     <ul>
                         <li><span>2012 - 2018</span><br>Completed School at <a href="https://www.sohopathi.com/khamar-dashalia-adarsha-high-school/" class="school">Khamar Dashlia Adarsha High School</a></li>
                         <li><span>2018 - 2020</span><br>Completed College <a href="http://cpscr.edu.bd/" class="college">Contonment public School and College, Rangpur</a></li>
@@ -181,7 +194,7 @@
 <!-----------------Projects---------------------------->
 
 <div id="projects">
-    <div class="container">
+    <div class="container box">
         <h1 class="sub-title">My All Project</h1>
         <div class="projects-list">
            <div>
@@ -261,7 +274,7 @@
 
 <!------------------------------My Service------------------------------->
 <div id="services">
-    <div class="container">
+    <div class="container box">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
            
@@ -292,8 +305,8 @@
 </div>
 
 <!---------------------portfolio----------------------------------------->
-<div id="Portfolio">
-    <div class="container">
+<div id="Portfolio box">
+    <div class="container box">
         <h1 class="sub-title">My Recent Work</h1>
         <div class="work-list">
 
@@ -362,7 +375,7 @@
 <!--------------------------contact---------------------->
 
 <div id="contact">
-    <div class="container">
+    <div class="container box">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
@@ -381,7 +394,7 @@
                     </span>
                 </button>
             </div>
-            <div class="contact-right">
+            <div class="contact-right box">
             <h2 class="contact-sub-titles">Write Your Opinion:</h2>
             <form name="submit-to-google-sheet">
                 <input type="text" name="Name" placeholder="Your Name" required>
@@ -403,6 +416,25 @@
         <p>Copyright © Farzine-2024</p>
     </div>
 </div>
+<!--===== Style Switcher End =====-->
+<div class="style-switcher">
+    <!-- <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div> -->
+    <div class="day-night s-icon">
+        <i class="fas "></i>
+    </div>
+    <!-- <h4>Theme Colors</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div> -->
+</div>
+<script src="./style-switcher.js"></script>
+<!--===== Style Switcher End =====-->
 
 <script src="./script.js">
 

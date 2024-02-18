@@ -1,3 +1,19 @@
+:root{
+    --bg-black-900:rgb(0, 0, 0);
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#060606;
+    --text-black-700:#504e70;
+}
+body.dark{
+        --bg-black-900:rgba(49, 47, 47, 0.314);
+        --bg-black-100:#222222;
+        --bg-black-50:#393939;
+        --text-black-900:white;
+        --text-black-700:#e9e9e9;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +26,7 @@ html{
 }
 
 body{
-    background: black;
+    background: var(--bg-black-900);
     color: white;
 }
 #header{
@@ -21,7 +37,7 @@ body{
     background-position: center;
 }
 /* ----------------------------------------------- */
-/* .box {
+.box {
     opacity: 0;
     transition: opacity 3.5s ease;
     -webkit-transition: opacity 3.5s ease;
@@ -60,20 +76,11 @@ body{
         border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
     }
   }
-  
-  .container {
-    padding: 2px 4%;
-    opacity: 0;
-  
-  }
-  
-  .containers {
-  
-    padding: 2px 4%;
-    opacity: 0;
-  
-  
-  } */
+/* ------------------------------------------------------------- */
+
+
+
+
 .animate__animated.animate__slideInUp {
     --animate-duration: 4s;
   }
