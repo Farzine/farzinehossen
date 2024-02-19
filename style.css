@@ -767,13 +767,10 @@ form .btn2{
 }
 /* follower box */
 .follower {
-
-
     position: relative;
   
     margin-top: 120px;
     margin-bottom: 0px;
-  
   }
   
   
@@ -857,8 +854,8 @@ form .btn2{
   
         position: relative;
     
-        margin-top: -50px;
-        margin-bottom: 70px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     
     }
     

@@ -85,12 +85,33 @@
     }
     .style-switcher .day-night{
         top: 50px;
+        right: 85px;
+    }
+    .style-switcher .colors span{
+        height: 20px;
+        width: 20px;
+    }
+    
+}
+@media screen and (min-width: 450px){
+    .style-switcher{
+        width: 100px;
+        padding: 10px;
+    }
+    .style-switcher .s-icon{
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+    .style-switcher .day-night{
+        top: 50px;
     }
     .style-switcher .colors span{
         height: 20px;
         width: 20px;
     }
 }
+
 @media screen and (min-width: 705px) and (max-width: 1200px){
     .style-switcher .day-night{
         top: 90px;
