@@ -1,3 +1,5 @@
+
+/* variable color and dark light mode */
 :root{
     --bg-black-900:rgb(0, 0, 0);
     --bg-black-100:#fdf9ff;
@@ -6,14 +8,14 @@
     --text-black-700:#504e70;
 }
 body.dark{
-        --bg-black-900:rgba(49, 47, 47, 0.314);
+        --bg-black-900:linear-gradient(90deg, #2C3E50 35%,  #4CA1AF 100%);
         --bg-black-100:#222222;
         --bg-black-50:#393939;
         --text-black-900:white;
         --text-black-700:#e9e9e9;
 }
 
-
+/* ------------------------------- */
 *{
     margin: 0;
     padding: 0;
@@ -36,14 +38,14 @@ body{
     background-size: cover;
     background-position: center;
 }
-/* ----------------------------------------------- */
+/* -----------------------motion hover entire page------------------------ */
 .box {
     opacity: 0;
-    transition: opacity 3.5s ease;
-    -webkit-transition: opacity 3.5s ease;
-    -moz-transition: opacity 3.5s ease;
-    -ms-transition: opacity 3.5s ease;
-    -o-transition: opacity 3.5s ease;
+    transition: opacity 2s ease;
+    -webkit-transition: opacity 2s ease;
+    -moz-transition: opacity 2s ease;
+    -ms-transition: opacity 2s ease;
+    -o-transition: opacity 2s ease;
   }
   @keyframes slideIn1 {
     0% {
@@ -76,10 +78,8 @@ body{
         border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
     }
   }
-/* ------------------------------------------------------------- */
 
-
-
+/* ----------------------header text animation--------------------------------------- */
 
 .animate__animated.animate__slideInUp {
     --animate-duration: 4s;
@@ -233,8 +233,10 @@ body{
     right: 15%;
     animation-delay: .3s;
   }
+
+
   
-/* ---------------------------------- */
+/* ------------navigation bar---------------------- */
 .container{
     padding: 10px 10%; /*menu bar allignment*/
 }
@@ -392,7 +394,7 @@ nav ul li a:hover::after{ /*hover effect for menue bar*/
 .tab-contents.active-tab{
     display: block;
 }
-/* -----------cv download button skills-------------- */
+/* -----------cv download button at skills section in skill-------------- */
 .Education {
 
     color: rgb(16, 107, 217);
@@ -519,6 +521,7 @@ nav ul li a:hover::after{ /*hover effect for menue bar*/
   }
 
 
+
 /*--------------------Project------------*/
 
 #projects{
@@ -562,6 +565,8 @@ nav ul li a:hover::after{ /*hover effect for menue bar*/
     background: rgb(16, 107, 217);
     transform: translateY(-15px);
 }
+
+
 
 /*---------------service----------------*/
 
@@ -607,7 +612,8 @@ nav ul li a:hover::after{ /*hover effect for menue bar*/
     transform: translateY(-15px);
 }
 
-/*------------portfolio-------------*/
+
+/*------------recent project-------------*/
 #Portfolio{
     padding: 50px 0;
 }
@@ -689,6 +695,7 @@ nav ul li a:hover::after{ /*hover effect for menue bar*/
     background: rgb(16, 107, 217);
 }
 
+
 /* ----------------contact------------- */
 
 .contact-left{
@@ -766,7 +773,8 @@ form .btn2{
     font-weight: 300;
     margin-top: 30px;
 }
-/* follower box */
+
+/*---------------follower box--------------*/
 .follower {
     position: relative;
   
@@ -881,16 +889,32 @@ form .btn2{
   
   #progress {
     position: fixed;
-    bottom: 20px;
-    right: 40px;
+    bottom: 100px;
+    right: 20px;
     z-index: 4;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: none;
     place-items: center;
     border-radius: 50%;
     box-shadow: 0 0 5px grey;
     cursor: pointer;
+  }
+  @media screen and (max-width: 350px) {
+    #progress {
+      bottom: 100px;
+      right: 15px;
+      height: 20px;
+      width: 20px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    #progress {
+      bottom: 80px;
+      right: 20px;
+      height: 30px;
+      width:30px;
+    }
   }
   
   #progress-value {
@@ -916,6 +940,8 @@ form .btn2{
         right: 10px;
     }
   }
+
+  
 /* -----------------CSS for small screen--------- */
 nav .fas{
     display: none;
@@ -1048,4 +1074,8 @@ nav .fas{
 .school{
     text-decoration: none;
     color: rgb(16, 107, 217);
+}
+/* -----chat bot------ */
+.chatbot{
+    bottom: 150px;
 }
